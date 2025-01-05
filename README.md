@@ -55,22 +55,6 @@ Este projeto é uma API que utiliza o Prisma para integrar com o banco de dados 
    npm start
    ```
 
-## Estrutura do Projeto
-
-```plaintext
-api-projeto/
-├── prisma/
-│   ├── schema.prisma       # Arquivo de definição do banco de dados
-├── src/
-│   ├── controllers/        # Lógica de controle das rotas
-│   ├── middlewares/        # Middlewares para validação e autenticação
-│   ├── routes/             # Definição das rotas da API
-│   ├── services/           # Serviços e lógica de negócios
-│   └── index.js            # Ponto de entrada da aplicação
-├── .env                    # Configurações sensíveis (não subir no repositório)
-├── package.json            # Dependências e scripts do projeto
-├── README.md               # Documentação do projeto
-```
 
 ## Exemplos de Rotas
 
@@ -78,25 +62,27 @@ api-projeto/
 
 - **Registrar Usuário**
   ```http
-  POST /api/register
+  POST /cadastro
   ```
   **Body:**
   ```json
   {
-    "username": "usuario",
-    "password": "senha"
+    "name": "name",
+     "email": "email",
+     "password": "password"
+
   }
   ```
 
 - **Login**
   ```http
-  POST /api/login
+  POST /login
   ```
   **Body:**
   ```json
   {
-    "username": "usuario",
-    "password": "senha"
+    "email": "email",
+    "password": "password"
   }
   ```
 
@@ -104,7 +90,7 @@ api-projeto/
 
 - **Obter Dados do Usuário**
   ```http
-  GET /api/user
+  GET /list
   ```
   **Headers:**
   ```
