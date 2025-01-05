@@ -25,8 +25,8 @@ Este projeto é uma API que utiliza o Prisma para integrar com o banco de dados 
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/api-projeto.git
-   cd api-projeto
+   git clone https://github.com/riangbr/PrismaNodeDB.git
+   cd PrismaNodeDB
    ```
 
 2. Instale as dependências:
